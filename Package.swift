@@ -9,11 +9,11 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/marcprux/java_util.git",
-            branch: "main"
+            branch: "master"
         ),
         .package(
             url: "https://github.com/marcprux/JNI.git",
-            branch: "main"
+            branch: "master"
         )
     ],
     targets: [
