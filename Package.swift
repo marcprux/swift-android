@@ -2,18 +2,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "Android",
+    name: "swift-android",
     products: [
         .library(name: "Android", targets: ["Android"]),
     ],
     dependencies: [
         .package(
-            url: "https://github.com/PureSwift/java_util.git",
-            branch: "master"
+            url: "https://github.com/marcprux/java_util.git",
+            branch: "main"
         ),
         .package(
-            url: "https://github.com/PureSwift/JNI.git",
-            branch: "master"
+            url: "https://github.com/marcprux/JNI.git",
+            branch: "main"
         )
     ],
     targets: [
