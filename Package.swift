@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "swift-android",
     products: [
-        .library(name: "Android", targets: ["Android"]),
+        .library(name: "SwiftAndroid", targets: ["SwiftAndroid"]),
     ],
     dependencies: [
         .package(
@@ -18,7 +18,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Android",
+            name: "SwiftAndroid",
             dependencies: ["java_util", "JNI"]
         )
     ]
