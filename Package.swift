@@ -2,9 +2,9 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-android",
+    name: "swift-android-sdk",
     products: [
-        .library(name: "SwiftAndroid", targets: ["SwiftAndroid"]),
+        .library(name: "AndroidSDK", type: .dynamic, targets: ["AndroidSDK"]),
     ],
     dependencies: [
         .package(
@@ -18,8 +18,12 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SwiftAndroid",
+            name: "AndroidSDK",
             dependencies: ["java_util", "JNI"]
+        ),
+        .testTarget(
+            name: "AndroidSDKTests",
+            dependencies: ["AndroidSDK"]
         )
     ]
 )
